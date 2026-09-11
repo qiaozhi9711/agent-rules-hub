@@ -12,14 +12,23 @@ A production-grade, community-driven collection of system prompts, agent instruc
 - **Multi-Stack Coverage**: Python (FastAPI/Django), TypeScript (React/Next.js), Go, and DevOps configs.
 - **Security Guardrails**: Hardened constraints against secret leaks and insecure dependencies.
 
-## 📂 Repository Structure
-```text
+## 📁 Repository Structure
+
 ├── rules/
 │   ├── frontend/         # React, Next.js, Vue
 │   ├── backend/          # Python, Node.js, Go
 │   └── devops/           # Docker, GitHub Actions
 ├── CONTRIBUTING.md       # Contribution guide
 └── README.md
+
+### 📦 Available Rule Profiles
+
+| Stack / Framework | Category | File Link | Target Agents |
+| :--- | :--- | :--- | :--- |
+| **Next.js 15 (App Router)** | Frontend | [`rules/frontend/nextjs-app-router.md`](./rules/frontend/nextjs-app-router.md) | Codex / Cursor / Claude |
+| **Node.js & Express** | Backend | [`rules/backend/nodejs-express.md`](./rules/backend/nodejs-express.md) | Codex / Cursor |
+| **Python FastAPI** | Backend | [`rules/backend/python-fastapi.md`](./rules/backend/python-fastapi.md) | Codex / Cursor |
+| **Docker & CI/CD** | DevOps | [`rules/devops/docker-actions.md`](./rules/devops/docker-actions.md) | Cursor / GitHub Actions |
 
 🚀 How to Use
 Locate your technology stack in the rules/ directory.
